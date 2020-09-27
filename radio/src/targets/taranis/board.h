@@ -95,6 +95,8 @@ void sdMount();
 void sdDone();
 void sdPoll10ms();
 uint32_t sdMounted();
+
+//BETAFPV
 //uncomment when using no sd card
 //#define SD_CARD_PRESENT()               ((SD_GPIO_PRESENT_GPIO->IDR & SD_GPIO_PRESENT_GPIO_PIN) == 0)
 

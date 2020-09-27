@@ -107,6 +107,7 @@ void lcdHardwareInit()
 #if LCD_W == 128
 void lcdStart()
 {
+  //BETAFPV
   //Uncomment below for SSD1306 OLED
   /*
     lcdWriteCommand(0xAE); // Set display OFF
@@ -135,7 +136,7 @@ void lcdStart()
   */
 
   //Uncomment below for SH1106 OLED
-
+  
     lcdWriteCommand(0xe2); // (14) Soft reset
     lcdWriteCommand(0xa1); // Set seg
     lcdWriteCommand(0xc8); // Set com
