@@ -1,0 +1,9 @@
+
+// Configure Flex
+cmake -G "MinGW Makefiles" -S C:\Projekte\opentx -B C:\Projekte\opentx-firmware -DCMAKE_PREFIX_PATH=C:\qt\5.12.6\msvc2017 -DDISABLE_COMPANION=YES -DPCB=X7 -DMODULE_PROTOCOL_FLEX=yes
+
+// Configure No Flex
+cmake -G "MinGW Makefiles" -S C:\Projekte\opentx -B C:\Projekte\opentx-firmware -DCMAKE_PREFIX_PATH=C:\qt\5.12.6\msvc2017 -DDISABLE_COMPANION=YES -DPCB=X7
+
+// Build
+mingw32-make -C C:\Projekte\opentx-firmware -j 8 firmware
